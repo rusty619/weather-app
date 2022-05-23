@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto+Serif&display=swap" rel="stylesheet">
+    <link href="./favicon.ico" rel="icon" type="image/x-icon" />
+</head>
+<body>
+    <nav>
+        <div class="topnav">
+            <a class="active "href="#">Weather App</a>
+        </div>
+    </nav>
+    <div id=""section-form>
+        <div class="container">
+            <form id="form-city">
+                <input  type="text" name="city" placeholder="Search City">
+                <button id="btn" type="submit" name="city" value="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <div>
+        <div id="show-card">
+            <div id="city">
+                <h3 id="temp-name"></h3>
+                <img src="" alt="" id="temp-img">
+                <h2 id="temp-des"></h2>
+                <div id="temp">
+                    <h4 id="temp-is"></h4>
+                    <p id="temp-feels"></p>
+                    <p id="more-details">More Details &#8594;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="details" value="hidden">
+        <div id="temp-div">
+            <p id="t" class="details-line"></p>
+            <p id="t-feels-like" class="details-line"></p>
+            <p id="t-temp-max" class="details-line"></p>
+            <p id="t-temp-min" class="details-line""></p>
+        </div>
+        <div id="other-div">
+            <p id="wind-speed" class="details-line"></p>
+            <p id="wind-gust" class="details-line"></p>
+            <p id="lat" class="details-line"></p>
+            <p id="lon" class="details-line"></p>
+        </div>
+            
+    </div>
+    <div id="like">
+        <button id="like-btn">Like</button>
+        <button id="unlike-btn">Unlike</button>
+        <p id="num-likes">likes: 0</p>
+    </div>
+    <script type='text/javascript' src='config.js'></script>
+    <script src="./index.js"></script>
+</body>
+</html>
